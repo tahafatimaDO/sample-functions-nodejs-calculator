@@ -1,0 +1,12 @@
+{
+  "name": "eval",
+  "version": "1.0.0",
+  "description": "Serverless calculator demo",
+  "main": "eval.js",
+  "dependencies": {
+    "expression-eval": "^2.0.0",
+    "redis": "^4.0.3"
+  },
+  "devDependencies": {
+  }
+}
