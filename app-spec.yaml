@@ -10,8 +10,8 @@ databases:
 functions:
 - envs:
   - key: DATABASE_URL
-    scope: RUN_AND_BUILD_TIME
-    value: 'rediss://default:9D90dV09dzSRkNqg@functions-redis-do-user-9818800-0.b.db.ondigitalocean.com:25061'
+    scope: RUN_TIME
+    value: ${functions-redis.REDIS_URL}
   github:
     branch: master
     deploy_on_push: true
@@ -21,7 +21,7 @@ functions:
   - path: /api
   source_dir: /
 name: calculator
-region: blr
+region: nyc
 static_sites:
 - build_command: ./build.sh
   environment_slug: html

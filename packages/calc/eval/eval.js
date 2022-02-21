@@ -3,8 +3,8 @@ const { createClient } = require("redis");
 const key = "counter";
 
 async function main(args) {
-  const redis = createClient({url: process.env.DATABASE_URL})
-  // const redis = createClient({url: args.DATABASE_URL_PARAM})
+  // const redis = createClient({url: process.env.DATABASE_URL})
+  const redis = createClient({url: args.DATABASE_URL_PARAM})
 
   return redis
     .connect()
