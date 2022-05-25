@@ -1,8 +1,0 @@
-packages:
-  - name: calc
-    actions:
-      - name: eval
-        environment:
-          DATABASE_URL: ${DATABASE_URL}
-        parameters:
-          DATABASE_URL_PARAM: ${DATABASE_URL}
